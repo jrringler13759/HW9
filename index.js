@@ -5,8 +5,8 @@ const inquirer = require("inquirer");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
-const questions = [
-    inquirer.prompt([
+function promptUser() {
+    return inquirer.prompt([
         {   type: "input",
             name: "username",
             message: "What is your GitHub username?"
@@ -17,11 +17,16 @@ const questions = [
         },
         {   type: "input",
             name: "description",
-            message: "Wat kind of license should your project have?",
-            choices: ["A", "B", "C"]
+            message: "please write a short description of your project."
+           
         },
         {   type: "input",
-            name: "npm",
+            name: "license",
+            message: "What kind of license should your project have?",
+            choices: ["GPL 3.0", "MIT", "AFL 3.0"]
+        },
+        {   type: "input",
+            name: "install",
             message: "What command should be run to install dependencies? "
         },
         {   type: "input",
@@ -35,22 +40,60 @@ const questions = [
         {   type: "input",
             name: "bring",
             message: "What does the user need to contribute to the repo? "
-        },
-        
-        
-    ]).then(function(data){
-        const 
-    })
-];
+        }
+    ]);
+};
 
 
-function writeToFile(fileName, data) {
-    //will I be using template literals to write the base of the document then fill in the variables where needed?
-    writeFileAsync("", ?, ?)
+function generateReadMe (answers) {
+`
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+##Title
+${answers.project}
+
+##Description
+${answers.description}
+
+##Table of Contents
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [License](#license)
+    - [Contributing](#contributing)
+    - [Tests](#tests)
+    - [Questions](#questions)
+
+##Installation
+To install necessary dependencies, run the following command:
+
+*I need to quite the code here but not sure about the backticks
+
+```${answers.install}```
+
+
+##Usage
+${answers.know}
+
+##License
+This project is licensed under the ${answers.license} license.
+
+##Contributing
+${answers.bring}
+
+`
 }
 
-function init() {
 
-}
+promptUser()
+.then(function(answers){
+    const readMe = generateReadMe(answers);
+    return writeFileAsync("README.md", readMe);
+})
+//is this the right way to handle the error?
+.catch(function(err) {
+    console.log(err);
+})
 
-init();
+
+
+

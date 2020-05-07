@@ -33,7 +33,8 @@ function generateMarkdown (answers) {
   
   ## Questions
   If you have any question please contact ${answers.name} at ${answers.email} 
-  ![Picture: GitHub](${answers.gitHubPic}.png)
+  
+  <img src="${answers.gitHubPic}.png" alt="drawing" width="50"/>
  
   `
 }

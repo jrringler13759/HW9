@@ -1,40 +1,42 @@
 function generateMarkdown (answers) {
  return `
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![License: MIT](https://img.shields.io/badge/License-${answers.license}-blueviolet.svg)](https://opensource.org/licenses/${answers.license})
   
-  ##Title
+  ## Title
   ${answers.project}
   
-  ##Description
+  ## Description
   ${answers.description}
   
-  ##Table of Contents
-      - [Installation](#installation)
-      - [Usage](#usage)
-      - [License](#license)
-      - [Contributing](#contributing)
-      - [Tests](#tests)
-      - [Questions](#questions)
+  ## Table of Contents
+      *[Installation](#installation)
+      *[Usage](#usage)
+      *[License](#license)
+      *[Contributing](#contributing)
+      *[Tests](#tests)
+      *[Questions](#questions)
   
-  ##Installation
+  ## Installation
   To install necessary dependencies, run the following command:
-  
-  *I need to quite the code here but not sure about the backticks
   
   \`\`\`${answers.install}\`\`\`
   
   
-  ##Usage
+  ## Usage
   ${answers.know}
   
-  ##License
+  ## License
   This project is licensed under the ${answers.license} license.
   
-  ##Contributing
+  ## Contributing
   ${answers.bring}
   
+  ## Questions
+  If you have any question please contact ${answers.name} at ${answers.email} 
+  ![Picture: GitHub](${answers.gitHubPic}.png)
+ 
   `
-  }
+}
   
 
-  module.exports = generateMarkdown;
+module.exports = generateMarkdown;

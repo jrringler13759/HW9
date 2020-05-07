@@ -1,36 +1,38 @@
-[![License: MIT](https://img.shields.io/badge/License-${answers.license}-blueviolet.svg)](https://opensource.org/licenses/${answers.license})
+
+  [![License: MIT](https://img.shields.io/badge/License-GPL3.0-blueviolet.svg)](https://opensource.org/licenses/GPL3.0)
   
   ## Title
-  ${answers.project}
+  a
   
   ## Description
-  ${answers.description}
+  a
   
   ## Table of Contents
-      *[Installation](#installation)
-      *[Usage](#usage)
-      *[License](#license)
-      *[Contributing](#contributing)
-      *[Tests](#tests)
-      *[Questions](#questions)
+  *[Installation](#installation)
+  *[Usage](#usage)
+  *[License](#license)
+  *[Contributing](#contributing)
+  *[Tests](#tests)
+  *[Questions](#questions)
   
   ## Installation
   To install necessary dependencies, run the following command:
   
-  \`\`\`${answers.install}\`\`\`
+  ```a```
   
   
   ## Usage
-  ${answers.know}
+  a
   
   ## License
-  This project is licensed under the ${answers.license} license.
+  This project is licensed under the GPL3.0 license.
   
   ## Contributing
-  ${answers.bring}
+  a
   
   ## Questions
-  If you have any question please contact ${answers.name} at ${answers.email} 
+  If you have any question please contact a at a 
   
-  <img src="${answers.gitHubPic}.png" alt="drawing" width="50"/>
+  <img src="https://avatars0.githubusercontent.com/u/59769199?v=4.png" alt="drawing" width="50"/>
  
+  

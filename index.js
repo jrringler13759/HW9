@@ -19,19 +19,20 @@ function promptUser() {
         {   type: "input",
             name: "description",
             message: "please write a short description of your project."
-           
         },
         {   type: "list",
             name: "license",
             message: "What kind of license should your project have?",
-            choices: ["GPL3.0", "MIT", "AFL3.0"]
+            choices: ["GPL_3.0", "MIT", "AFL_3.0", "none"]
         },
         {   type: "input",
             name: "install",
+            default: "npm install",
             message: "What command should be run to install dependencies?"
         },
         {   type: "input",
             name: "test",
+            default: "npm run test",
             message: "What command should be run to run tests?"
         },
         {   type: "input",

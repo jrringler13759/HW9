@@ -6,8 +6,10 @@ function generateMarkdown (answers) {
   ## Title
   ${answers.project}
   
+  
   ## Description
   ${answers.description}
+
   
   ## Table of Contents
   
@@ -27,13 +29,11 @@ function generateMarkdown (answers) {
   ## Installation
   To install necessary dependencies, run the following command:
   
-
   \`\`\`${answers.install}\`\`\`
 
   
   ## Tests
   To run tests, run the following command:
-
 
   \`\`\`${answers.test}\`\`\`
 
@@ -41,12 +41,15 @@ function generateMarkdown (answers) {
   ## Usage
   ${answers.know}
   
+
   ## License
   This project is licensed under the ${answers.license} license.
   
+
   ## Contributing
   ${answers.bring}
   
+
   ## Questions
   <img src="${answers.gitHubPic}.png" alt="profile pic" width="50"/>
   If you have any question please contact ${answers.name} at ${answers.email} 

@@ -28,7 +28,7 @@ function generateMarkdown (answers) {
   To install necessary dependencies, run the following command:
   
 
-  ${answers.install}
+  \`\`\`${answers.install}\`\`\`
 
   
   ## Tests
@@ -39,7 +39,7 @@ function generateMarkdown (answers) {
 
 
   ## Usage
-  \`\`\`${answers.know}\`\`\`
+  ${answers.know}
   
   ## License
   This project is licensed under the ${answers.license} license.

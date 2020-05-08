@@ -27,7 +27,7 @@
   To install necessary dependencies, run the following command:
   
 
-  npm install
+  ```npm install```
 
   
   ## Tests
@@ -38,7 +38,7 @@
 
 
   ## Usage
-  ``````
+  
   
   ## License
   This project is licensed under the GPL_3.0 license.

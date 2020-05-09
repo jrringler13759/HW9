@@ -5,9 +5,11 @@
   ## Title
   Olympics
   
+
   
   ## Description
-  Summer Olympic Training
+  Still training for the summer olympics
+
 
   
   ## Table of Contents
@@ -25,30 +27,36 @@
   *[Questions](#questions)
   
   
+
   ## Installation
   To install necessary dependencies, run the following command:
   
   ```npm install```
 
   
+
   ## Tests
   To run tests, run the following command:
 
   ```npm run test```
 
 
+
   ## Usage
   It's going to be tough
   
+
 
   ## License
   This project is licensed under the GPL_3.0 license.
   
 
+
   ## Contributing
   Bring your A game
   
 
+
   ## Questions
   <img src="https://avatars0.githubusercontent.com/u/59769199?v=4.png" alt="profile pic" width="50"/>
-  If you have any question please contact Jessica Ringler at jrringler13759@gmail.com 
+  If you have any question please contact Jessica Ringler at <a href="mailto:jrringler13759@gmail.com">jrringler13759@gmail.com</a> 
